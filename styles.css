@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4A2C2A; /* Warna coklat tua */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.title {
+    font-size: 2.5em; /* Ukuran font untuk judul */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+nav {
+    height: 50%;
+    background-color: rgba(146, 146, 146, 0.496);
+    margin-top: 10px; /* Jarak antara judul dan menu */
+}
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #FFD700; /* Warna emas saat hover */
+}
+
+.nav-menu .active {
+    font-weight: bold;
+    color: #FFD700; /* Warna emas untuk link aktif */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #4A2C2A; /* Warna coklat tua */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-image {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-text p {
+    margin: 0;
+}
+
+.footer-address {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
