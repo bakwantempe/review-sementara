@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda - Kafe Koma</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Tambahan CSS untuk galeri */
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      .gallery img {
+        width: 200px; /* Atur lebar gambar */
+        height: auto; /* Menjaga rasio aspek */
+        border-radius: 5px; /* Sudut melengkung */
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      /* Tambahan CSS untuk testimoni */
+      blockquote {
+        border-left: 4px solid #ff5733; /* Garis samping untuk testimoni */
+        margin: 20px 0;
+        padding-left: 10px;
+        font-style: italic;
+      }
+      /* Tambahan CSS untuk section */
+      section {
+        margin-bottom: 40px; /* Jarak antar section */
+      }
+      /* CSS untuk video dan overlay */
+      #beranda {
+        padding-top: 15%;
+        padding-bottom: 15%;
+        position: relative;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Menempatkan konten di tengah secara vertikal */
+        align-items: center; /* Menempatkan konten di tengah secara horizontal */
+      }
+      #beranda video {
+        width: 100%;
+        height: 100%; /* Mengatur tinggi video menjadi 50% dari viewport */
+        object-fit: cover; /* Memastikan video menutupi area */
+        position: absolute; /* Mengatur posisi video */
+        top: 0;
+        left: 0;
+        z-index: 1; /* Video di belakang */
+      }
+      #beranda .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Overlay gelap */
+        z-index: 2; /* Overlay di atas video */
+      }
+      #beranda h2 {
+        position: relative;
+        z-index: 3; /* Teks di atas overlay */
+        font-size: 2.5em; /* Ukuran font untuk judul */
+        margin: 0; /* Menghilangkan margin default */
+      }
+      #beranda p {
+        position: relative;
+        z-index: 3; /* Teks di atas overlay */
+        font-size: 1.2em; /* Ukuran font untuk paragraf */
+        margin: 10px 0; /* Margin atas dan bawah */
+      }
+
+      .gallery {
+        width: 100%;
+        overflow: hidden; /* Menyembunyikan gambar yang keluar dari area */
+        position: relative;
+      }
+
+      .gallery-wrapper {
+        animation: marquee 10s linear infinite;
+        display: flex;
+      }
+
+      .gallery img {
+        width: 100%; /* Mengatur lebar gambar */
+        height: 300px; /* Menjaga rasio aspek */
+      }
+
+      #media-sosial {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#media-sosial h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #4A2C2A; /* Warna coklat tua */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antara link media sosial */
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4A2C2A; /* Warna coklat tua */
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ff5722; /* Warna oranye saat hover */
+    transform: translateY(-3px);
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+      @keyframes marquee {
+        from {
+          transform: translateX(100%); /* Mulai dari kanan */
+        }
+        to {
+          transform: translateX(-100%); /* Berhenti di kiri */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Koma</h1>
+      <h2>C O F F E E & E A T E R Y</h2>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="fasilitas.html">Fasilitas</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="beranda">
+      <video autoplay muted loop>
+        <source src="1229.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay"></div>
+      <h2 class="page-title">Selamat Datang di Kafe Koma</h2>
+      <p>"selalu ada kata setelah koma"</p>
+    </section>
+
+    <section id="tentang-kami">
+      <h2>Tentang Kafe Koma</h2>
+      <p>
+        Selamat datang di Kafe Koma, tempat di mana cita rasa bertemu dengan
+        kenyamanan. Kami adalah kafe yang didirikan dengan semangat untuk
+        menyajikan pengalaman kuliner yang tak terlupakan. Terletak di jantung
+        Kota Pal IX, Kafe Koma menawarkan suasana yang hangat dan ramah, ideal
+        untuk bersantai, berkumpul dengan teman, atau bahkan bekerja.
+      </p>
+
+      <p>
+        Di Kafe Koma, kami percaya bahwa setiap cangkir kopi memiliki cerita.
+        Kami menggunakan biji kopi pilihan yang dipanggang dengan sempurna untuk
+        menghasilkan rasa yang kaya dan aroma yang menggoda. Selain kopi, kami
+        juga menawarkan berbagai pilihan minuman segar dan makanan lezat yang
+        dibuat dengan bahan-bahan berkualitas tinggi.
+      </p>
+
+      <p>
+        Kami berkomitmen untuk memberikan pelayanan terbaik kepada setiap
+        pengunjung. Tim barista kami yang terlatih siap membantu Anda menemukan
+        minuman yang sesuai dengan selera Anda. Apakah Anda penggemar kopi
+        klasik atau ingin mencoba sesuatu yang baru, kami memiliki sesuatu untuk
+        semua orang.
+      </p>
+
+      <p>
+        Kafe Koma bukan hanya sekadar tempat untuk menikmati makanan dan
+        minuman; kami juga berusaha menciptakan komunitas. Kami sering
+        mengadakan acara, seperti live music dan workshop, untuk menghubungkan
+        orang-orang dan merayakan kreativitas.
+      </p>
+
+      <p>
+        Kami mengundang Anda untuk datang dan merasakan sendiri kehangatan dan
+        kelezatan yang ditawarkan Kafe Koma. Setiap kunjungan adalah kesempatan
+        untuk menciptakan kenangan baru. Selamat datang di Kafe Koma, tempat di
+        mana setiap momen menjadi istimewa.
+      </p>
+    </section>
+
+    <section id="jam-buka" style="text-align: center">
+      <h2>Jam Buka</h2>
+      <p>Senin - Jumat: 08:00 - 22:00</p>
+      <p>Sabtu - Minggu: 09:00 - 23:00</p>
+    </section>
+
+    <section id="galeri">
+      <h2>Galeri Kafe Koma</h2>
+      <div class="gallery">
+        <div class="gallery-wrapper">
+          <img src="1.jpg" alt="Gambar 1" />
+          <img src="2.jpg" alt="Gambar 2" />
+          <img src="3.jpg" alt="Gambar 3" />
+          <img src="4.jpg" alt="Gambar 4" />
+          <img src="koma2.jpg" alt="Gambar 1" />
+          <!-- Duplikat gambar pertama -->
+        </div>
+      </div>
+    </section>
+
+    <section id="testimoni">
+      <h2>Apa Kata Mereka</h2>
+      <blockquote>
+        <p>
+          "Kafe Koma adalah tempat favorit saya! Makanannya selalu lezat dan
+          suasananya sangat nyaman."
+        </p>
+        <footer>- Pelanggan Setia</footer>
+      </blockquote>
+      <blockquote>
+        <p>
+          "Pelayanan yang ramah dan cepat. Saya selalu merasa di rumah saat
+          berada di sini."
+        </p>
+        <footer>- Pengunjung Reguler</footer>
+      </blockquote>
+    </section>
+
+    <section id="promosi">
+      <h2>Penawaran Khusus</h2>
+      <p>Dapatkan diskon 20% untuk semua minuman setiap hari Senin!</p>
+    </section>
+
+    <section id="media-sosial">
+      <h2>Ikuti Kami di Media Sosial</h2>
+      <div class="social-links">
+          <a href="https://www.instagram.com/kafekoma" target="_blank" class="social-link">
+              <img src="ig.png" alt="Instagram" class="social-icon">
+              <span>Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/kafekoma" target="_blank" class="social-link">
+              <img src="fb.jpg" alt="Facebook" class="social-icon">
+              <span>Facebook</span>
+          </a>
+          <a href="https://twitter.com/kafekoma" target="_blank" class="social-link">
+              <img src="twitter.png" alt="Twitter" class="social-icon">
+              <span>Twitter</span>
+          </a>
+          <a href="https://www.youtube.com/kafekoma" target="_blank" class="social-link">
+              <img src="ytmusic.png" alt="YouTube" class="social-icon">
+              <span>YouTube</span>
+          </a>
+      </div>
+  </section>
+
+    <footer>
+      <div class="footer-content">
+        <img src="koma2.jpg" alt="koma" class="footer-image" />
+        <div class="footer-text">
+          <p>K O M A,</p>
+          <p>C O F F E E & E A T E R Y</p>
+        </div>
+      </div>
+      <div class="footer-address">
+        <p>
+          Jl. Perdamaian, Pal IX, Kec. Sungai Kakap, Kabupaten Kubu Raya,
+          Kalimantan Barat
+        </p>
+        <p>&copy; 2024 KOMA COFFEE</p>
+      </div>
+    </footer>
+  </body>
+</html>
